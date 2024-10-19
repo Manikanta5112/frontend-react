@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css"></link>
+    <title></title>
+</head>
+<body>
+    <h1>top of root</h1>
+    <div id="root">
+        <!--whatever I have inside it => it will be overridden/replaced by react render-->
+    </div>
+    <h1>bottom of root</h1>
+</body>
+
+<!--creating a React is the Job of this and "crossorigin" attribute to handle cross-origin requests.-->
+<script 
+    crossorigin 
+    src="https://unpkg.com/react@18/umd/react.development.js" 
+></script>
+<!--Rendering the DOM is the Job of this-->
+<script 
+    crossorigin 
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+></script>
+
+<script src="./App.js">
+    
+</script>
+
+<!--
+<script>
+    //const heading = document.createElement("h1")
+    //heading.innerHTML = "Namaste Java Script"
+    //const root = document.getElementById("root")
+    //root.appendChild(heading)
+</script>
+-->
+</html>
+
+<!-- React is a library
+ (even for small portions of the elements still works)
+React works independently to the smallest of smallest of code
+like let say for div I have id ="root", it will work
+if it header it is still work
+-->

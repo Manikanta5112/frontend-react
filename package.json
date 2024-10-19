@@ -1,0 +1,30 @@
+{
+  "name": "frontend-react",
+  "version": "1.0.0",
+  "description": "\"This is Namaste React by Manikanta\"",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manikanta5112/frontend-react.git"
+  },
+  "keywords": [],
+  "author": "Manikanta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Manikanta5112/frontend-react/issues"
+  },
+  "homepage": "https://github.com/Manikanta5112/frontend-react#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "browserslist":[
+    "last 20 chrome version"
+  ]
+}

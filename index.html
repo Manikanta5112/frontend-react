@@ -13,35 +13,13 @@
     </div>
     <h1>bottom of root</h1>
 </body>
-
-<!--creating a React is the Job of this and "crossorigin" attribute to handle cross-origin requests.-->
-<script 
-    crossorigin 
-    src="https://unpkg.com/react@18/umd/react.development.js" 
-></script>
-<!--Rendering the DOM is the Job of this-->
-<script 
-    crossorigin 
-    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-></script>
-
-<script src="./App.js">
+<!--if you don't specify the type - then you will get an error
+because, browser treats it as complete java script thus ending up an error 
+browser scripts cannot have imports or exports
+-->
+<script type="module" src="./App.js"> 
     
 </script>
 
-<!--
-<script>
-    //const heading = document.createElement("h1")
-    //heading.innerHTML = "Namaste Java Script"
-    //const root = document.getElementById("root")
-    //root.appendChild(heading)
-</script>
--->
-</html>
 
-<!-- React is a library
- (even for small portions of the elements still works)
-React works independently to the smallest of smallest of code
-like let say for div I have id ="root", it will work
-if it header it is still work
--->
+</html>

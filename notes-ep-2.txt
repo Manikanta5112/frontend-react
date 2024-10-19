@@ -1,0 +1,38 @@
+package.json = is a configuration for npm
+
+to generate it - npm init
+
+webpack, parcel, wheat (called bundlers) (create-react-app behind see uses)
+
+these are algorithm to bundles 
+
+what these bundlers do:
+    - chunking
+    - minification
+    - and more to optimize the code, so that it is ready to move production
+
+
+npm install -D parcel (-D - want as a dev dependency)
+    - two types of dev and normal dependency
+    - dev: generally required for development
+
+ "parcel": "^2.12.0" - ^ called caret (automatically upgraded to new version when there is a minor upgrade 2.8.4)
+ "parcel": "~2.12.0" - ^ called caret (automatically upgraded to new version when there is a major upgrade 3.0.0)
+
+package-lock.json = will have a exact version like 2.12.0
+
+transitive dependencies = nested dependencies
+
+npx parcel index.html (npx parcle html_name) (inside it builds index.html and host it server)
+
+    - npx: execute a package
+
+npm install react
+npm install react-dom or npm i react-dom
+
+To create a prod build
+- npx parcel build index.html
+- Initially when you run
+    - you will get an error because here starting you are mentioning index.html
+      where as in package.json you have specified starting as main.js ("main": "App.js",)
+      so, after removing it will resolve our issue
