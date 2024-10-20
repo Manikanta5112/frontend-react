@@ -1,5 +1,8 @@
 # Laying the foundation
 
+Note: using index as key is Bad practice in React
+
+
 **Js Engine** understands ECMAScript (ES6)
 
 - if you don't know how to  build an app
