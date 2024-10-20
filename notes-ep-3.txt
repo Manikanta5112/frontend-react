@@ -1,0 +1,111 @@
+# Laying the foundation
+
+**Js Engine** understands ECMAScript (ES6)
+
+- if you don't know how to  build an app
+    - go to package.json file
+        - under scripts
+            - look for start or build
+
+- Now, to run the project
+    - npm run start === npm start (still works not in production using build)
+    -  npm run build !== npm build (will now work)
+
+To Match index.css to App.js
+    - id values, needs to matched to impact the color
+
+To Create a elements like This React.createElement("h1",{id:"heading1"},"This is heading")
+    - or more nested or complex it is not easy
+    - whereas if we see in html codes it is more obvious and clear
+    - so, for the facebook developers created a JSX
+
+JSX - Java script syntax easier to create a React elements
+
+React is different from JSX 
+    - without JSX we can build any production ready apps
+    - But, JSX makes our life easier to build apps
+    - JSX (merge html and java Script)
+    - JSX is not HTML in JS, JSX is a syntax
+
+JS engines don't understand This (for this this check and enter in console)
+    - const jsxHeading = <h1 id="heading1">Namaste React using JSX</h1>;
+    - But, whereas when we pass this code in App.js, parcel will take care of conversion
+    // JSX (transpiled before it reaches the JS Engine) - PARCEL (this assigns conversions to babel) - Babel
+
+    // JSX => React.createElement => ReactElement - JS Object => HTMLElement (render)
+    Babel - Converts JSX to React.createElement
+        - Also, converts the ES6 engine which will not understand and make it understandable to even for old browsers
+
+JSX is not HTML:
+    - JSX 'className="heading"' tabIndex (it is a camelCase)
+    - HTML 'class="heading', tabindex
+    // JSX - is not HTML in JS
+// But, it is HTML - like or XML like syntax
+// JSX (transpiled before it reaches the JS Engine) - PARCEL (this assigns conversions to babel) - Babel
+// JSX => React.createElement => ReactElement - JS Object => HTMLElement (render)
+
+
+Everything is a component in a React
+
+    - button, header, card, heading, title, inputbox,
+
+# React component
+
+    - Class Based Component - OLD way of writing code (None one uses)
+    - Functional Component - New way of Writing Code
+
+    # Functional Component
+        - Note: functional component name should always start as Capital (HeadingComponent)
+        - A function that returns a piece of JSX (ReactElement)
+
+
+    `// React Functional Component
+    const HeadingComponent = () => {
+        return <h1 className="heading">Namaste React Functional Component</h1>;
+    };
+
+    or  
+
+    const HeadingComponent = () => <h1 className="heading">Namaste React Functional Component</h1>;
+    `
+
+React Element to React Functional Component
+
+    // React Element
+const heading = (<h1 id="heading1" className="head">
+    Namaste React using JSX
+    </h1>);
+
+    // React Component
+const Heading = () => (<h1 id="heading1" className="head">
+    Namaste React using JSX
+    </h1>);
+
+- ReactElement render
+    - root.render(heading)
+- React Functional render
+    - root.render(<HeadingComponent/>) (this way babel understand it is functional compoenet)
+
+Note:
+    - Component Composition
+        - putting one componet into another componet
+
+        // React Functional
+        const Title =  () => (<h1 id="heading1" className="head">
+            Namaste React using JSX
+            </h1>);
+
+        // React Functional Component
+        const HeadingComponent = () => {
+            return (
+                <div id="container">
+                    <Title/> 
+                    <h1 id="heading1" className="heading">Namaste React Functional Component</h1>
+                </div>
+            );
+        };
+
+    - To write any java script expression inside JSX
+        - just uses { number }
+- JSX takes care of any injection of malicious data (cross site scripting)
+- JSX sanitizes any piece of code

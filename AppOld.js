@@ -13,6 +13,7 @@
  * createElement we generally call as CreateElementAPI
  */
 
+// React.createElement => object => when we render then it will become (HTML Element)
 // createElement(htmlElementTag, attributes, child(what we have to put inside in this))
 const parent = React.createElement(
     "div", {id: "parent"},

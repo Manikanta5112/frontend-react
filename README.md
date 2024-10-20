@@ -32,3 +32,7 @@ when you run npx parcel index.html (dev build) or npx parcel build index.html (p
 
 Browsers List:
 - [https://browserslist.dev/?q=bGFzdCAyIHZlcnNpb25z]
+
+# Babel
+
+    - Babel converts the jsx code into react code which is understandble for JS Engine
