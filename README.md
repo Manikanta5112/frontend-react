@@ -36,3 +36,51 @@ Browsers List:
 # Babel
 
     - Babel converts the jsx code into react code which is understandble for JS Engine
+
+
+# Food Ordering App
+
+/**
+ * Header
+ *  - Logo
+ *  - Nav Items (Home, About)
+ * Body
+ *  - Search 
+ *  - RestaurentContainer
+ *      - RestairentCard
+ *      - Img
+ *      - Name of the restaurent
+ *      - Star Rating, cuisine, delivery time
+ * Footer
+ *  - Copyright
+ *  - Links
+ *  - Address
+ *  - Contact
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+ Two types of Export/Import
+
+ - Default Export/Import
+
+ export default Component;
+ import Component from "path";
+
+ - Named Export/Import
+
+ export const Component;
+ import {Component} from "path";
+
+
+ # React Hooks
+  (Normal JS utility functions)
+  whenever my state variable changes react will re-render the component
+  - useState() - Superpowerful state variables in react
+  - useEffect()
+
+
+- React is good at DOM Operations
